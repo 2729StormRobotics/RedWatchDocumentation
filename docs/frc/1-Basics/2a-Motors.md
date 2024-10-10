@@ -8,7 +8,7 @@ An actuator is defined as "a component of a machine that is responsible for movi
 
 Our robot is essentially entirely made up of motors. All moving components are controlled by motors or pneumatics, and our job as programmers is to figure out how to convert drive team input into the robot actually doing its job. We can make sure that certain motors move when drive team pushes buttons or joysticks on a game controller.
 
-Motors are widely used throughout most, if not all of our robot's subsystems, especially on the drivetrain. When we have a motor, we can have our robot code apply a voltage to the motor, which will cause it to spin. On our robot, this motor will be attached to a gearbox and other mechanical contraptions to transform this rotational motion into the motion desired for the robot. As of the 2019-20 season, 1257 mainly uses NEO Brushless and NEO 550 motors made by REV Robotics.
+Motors are widely used throughout most, if not all of our robot's subsystems, especially on the drivetrain. When we have a motor, we can have our robot code apply a voltage to the motor, which will cause it to spin. On our robot, this motor will be attached to a gearbox and other mechanical contraptions to transform this rotational motion into the motion desired for the robot. As of the 2024 season, 2720 mainly uses NEO Brushless and NEO 550 motors made by REV Robotics.
 
 ![SPARK MAX](img/SPARKMAX.png ':size=330x310') ![NEO 550](img/NEOvs550.png ':size=330x230')
 
@@ -96,7 +96,7 @@ Now, to apply power to the motor and make it move at a speed, we can use `motor.
 
 ## Other Motor Controllers
 
-The SPARK MAX is not the only motor controller we could use—in the past, 1257 has used Talon SRXs and Victor SPXs (both by [CTRE](http://www.ctr-electronics.com/control-system.html?p=3)).
+The SPARK MAX is not the only motor controller we could use, other teams have used Talon SRXs and Victor SPXs (both by [CTRE](http://www.ctr-electronics.com/control-system.html?p=3)).
 
 While the motor controller may differ, the general process of controlling the motor is most the same. If Talon SRXs were being used, changes would go towards the class name (now `WPI_TalonSRX`) and any functions taken from that class (e.g. `setIdleMode()` would be `setNeutralMode()`, and `setSmartCurrentLimit()` would be `configContinuousCurrentLimit()`.
 

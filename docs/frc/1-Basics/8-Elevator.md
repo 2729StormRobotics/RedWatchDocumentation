@@ -6,7 +6,7 @@ You now know how to make three major subsystems that our team uses. In this less
 
 ![Elevator CAD](img/elevatorExtended.jpeg ':size=392x389')
 
-Pictured above is an elevator subsystem. Not every elevator looks like this, though almost all used by 1257 have followed the same general concept. There are pulleys set up that are spun using motors that raise the elevator up and down. In many designs, the motors both spin in the same direction though there are also quite a few where the spin in opposite directions because of the ways that the pulleys are set up.
+Pictured above is an elevator subsystem. Not every elevator looks like this, though almost all of them have followed the same general concept. There are pulleys set up that are spun using motors that raise the elevator up and down. In many designs, the motors both spin in the same direction though there are also quite a few where the spin in opposite directions because of the ways that the pulleys are set up.
 
 When considering only manual control, elevators are actually very similar to arms in that they just use 1-2 motors that you can control with a joystick. Typically, elevators have heaver loads than arms so they will use 2 motors often while arms may be seen with only one motor. In this tutorial, we'll review how to program an elevator that uses two motors.
 
@@ -296,4 +296,4 @@ public final class Constants {
 
 If there are any lingering questions about anything gone over in this lesson, please ask a senior programming member. Click [here](https://github.com/FRC1257/training-programs/tree/master/basics/elevator) for a link to the full code.
 
-With the elevator lesson over, you now know how to code four major subsystems that our team uses! Next lesson, we will learn about arguably the most important subsystem that Team 1257 uses: the drivetrain!
+With the elevator lesson over, you now know how to code four major subsystems that our team uses! Next lesson, we will learn about arguably the most important subsystem ever: the drivetrain!

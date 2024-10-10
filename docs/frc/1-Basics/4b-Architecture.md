@@ -24,7 +24,7 @@ This folder doesn't contain anything at the moment, but when we start programmin
 
 This is the biggest file in the template and probably the most important. This file can be thought of as almost a map or blueprint of how the entire robot is put together. This file contains all the different components of the robot from the various classes in our project and puts them together.
 
-Our template has a lot of areas that are supposed to be filled in. To see a fully completed version of `RobotContainer`, please see our version in the 2020 robot: [`RobotContainer.java`](https://github.com/FRC1257/2020-Robot/blob/master/src/main/java/frc/robot/RobotContainer.java).
+Our template has a lot of areas that are supposed to be filled in. To see a fully completed version of `RobotContainer`, please see our version in the 2024 robot.
 
 First of all, in the constructor for `RobotContainer`, we create all of our controllers (we always use 2) that we use for controlling the robot. The primary function of our constructor is to call a bunch of other functions which we discuss below.
 
@@ -60,7 +60,7 @@ This folder contains some utility classes that are used by other sections of our
 
 ## Constants.java
 
-`Constants.java` is a file that will be frequently edited. When we make our robot code, we will many times have "magical numbers" that we just throw in. For instance, we might test our intake and discover that 60% is a good speed to set it to. Instead of just throwing this in our robot code where it could easily get lost, we put it in `Constants.java`. `Constants.java` serves as the main hub for every constant we could possible put in our robot. For an example, see this file in our 2020 Robot Code: [`Constants.java`](https://github.com/FRC1257/2020-Robot/blob/master/src/main/java/frc/robot/Constants.java).
+`Constants.java` is a file that will be frequently edited. When we make our robot code, we will many times have "magical numbers" that we just throw in. For instance, we might test our intake and discover that 60% is a good speed to set it to. Instead of just throwing this in our robot code where it could easily get lost, we put it in `Constants.java`. `Constants.java` serves as the main hub for every constant we could possible put in our robot.
 
 We structure this file with [inner static classes](https://www.geeksforgeeks.org/static-class-in-java/). An example would be `ElectricalLayout`, where we store all IDs/port numbers for robot hardware. Using static classes allows us to reference constants through something like `Constants.ElectricalLayout.CONTROLLER_DRIVER_ID` and put a lot more organization into our program.
 

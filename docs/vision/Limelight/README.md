@@ -52,6 +52,3 @@ NetworkTableInstance.getDefault().getTable("limelight").getEntry("pipeline").set
 
 TODO
 
-### Limelight Utility Class
-
-In previous years, we've abstracted much of this information into a utility class called `Limelight` inside of our `/util` folder. You can check out previous years' iterations of this [here](https://github.com/FRC1257/2020-Robot/blob/master/src/main/java/frc/robot/util/Limelight.java). Basically, rather than having to constantly type out the network tables calls and risk messing them up somewhere in our code, we just make a few functions that can do this for us. We could also customize this class by adding extra functions to modify which pipelines we are on.

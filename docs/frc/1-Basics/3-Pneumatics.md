@@ -32,8 +32,6 @@ A solenoid is a device that essentially converts certain electrical signals into
 
 On the other hand, a double solenoid has two solenoids, and when we apply voltage to just one of them, the cylinder shifts in the corresponding direction. The double solenoid works like a toggle -- the solenoid will use power to go to one position, but will stay there until the opposite solenoid is powered.
 
-1257 used *three-way, two-position* solenoids in their 2019 climb system. Along with the capabilities of a basic double solenoid, this device allows air to act on both sides/directions simultaneously, such that the cylinder can be "frozen" in a position.
-
 ### Compressor & PCM
 
 ![Compressor](img/compressor.jpg ':size=200x200') ![PCM](img/pcm.jpg ':size=200x200')
@@ -62,7 +60,7 @@ This mechanism is an example of how actuations can be only "fully in" or "fully 
 
 We can now translate the basics of pneumatics into our robot program.
 
-Initializing and commanding solenoids in the program is similar to how we did in the [Motors.md](https://frc1257.github.io/robotics-training/#/frc/1-Basics/2-Motors) section. Two things must be known before creating our program, however: whether *single* or *double* solenoids are being used, and also the respective ID port numbers on the PCM. Here's what we'll do:
+Initializing and commanding solenoids in the program is similar to how we did in the [Motors.md](https://2729stormrobotics.github.io/RedWatchDocumentation/#/frc/1-Basics/2-Motors) section. Two things must be known before creating our program, however: whether *single* or *double* solenoids are being used, and also the respective ID port numbers on the PCM. Here's what we'll do:
 
 ```java
 // Single Solenoid

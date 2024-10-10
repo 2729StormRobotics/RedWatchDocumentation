@@ -59,7 +59,7 @@ This is a `SequentialCommandGroup` that moves the robot forward a certain distan
 
 ---
 
-Now let's take a look at a more complex example, taken from 1257's robot code for 2020's Infinite Recharge.
+Now let's take a look at a more complex example, taken from 1257's robot code.
 
 ```java
 public class TrajDriveAndShoot extends ParallelDeadlineGroup {
@@ -101,7 +101,7 @@ If we look at the example above, we see `.withTimeout(INDEXER_DUMP_TIME)`. This 
 
 ## Trajectory Auto
 
-We've gone through two command group examples--now let's get into auto routines that include drivetrain trajectories (from 1257's 2020 auto):
+We've gone through two command group examples--now let's get into auto routines that include drivetrain trajectories:
 
 ```java
 public class TrajTopTrenchAuto extends SequentialCommandGroup {

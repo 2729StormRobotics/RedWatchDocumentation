@@ -4,7 +4,7 @@ This article will just be a quick list of all of the steps necessary to program 
 
 ## Create Project from snail-robot-template (if making a new project)
 
-1. Go to [https://github.com/FRC1257/snail-robot-template] and press the green `Use this template` button to create a new project if you are making a new project. If working on an already existing project, skip this step.
+1. Go to [coming soon] and press the green `Use this template` button to create a new project if you are making a new project. If working on an already existing project, skip this step.
 2. If working on the GitHub website, skip the rest of this section. If using Visual Studio Code, follow the rest of the instructions.
 3. Open GitHub Desktop and log in if necessary. Go to File > Clone Repository and then select the repository that you just created in Step 1.
 4. Select a local area on your computer where you will download this project to. It is highly recommended that you make a folder on your computer in your Desktop or Documents folder for containing all robotics projects.
@@ -85,7 +85,7 @@ operatorController.getButton(Button.kY.value).whenPressed(new ClimbBackCommand(c
 
 ## Examples
 
-For a list of tons of examples of subsystems we've programmed in the past, check this out for [examples](https://github.com/FRC1257/training-programs)!
+For a list of tons of examples of subsystems that look similar to ours, check this out for [examples](https://github.com/FRC1257/training-programs)!
 
 ## File Templates
 

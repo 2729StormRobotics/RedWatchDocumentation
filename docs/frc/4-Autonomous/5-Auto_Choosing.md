@@ -8,7 +8,7 @@ Most of the work here is done in `RobotContainer.java`, with a few scheduling ne
 
 First, we have to consider our robot's autonomous "states." They include the robot's auto drive type (segmented vs. trajectory), starting position, and end goal--in 2020 we did not have to worry about where to score, as the target zone position was constant. (In 2018, however, the scoring goals were on varying sides of the field.)
 
-The robot states are stored as [enums](https://frc1257.github.io/robotics-training/#/java/2-Control_Flow/7-Enums), and are placed in `Constants.java` in the `Autonomous` static class in the following manner:
+The robot states are stored as [enums](https://2729stormrobotics.github.io/RedWatchDocumentation/#/java/2-Control_Flow/7-Enums), and are placed in `Constants.java` in the `Autonomous` static class in the following manner:
 
 ```java
 ...

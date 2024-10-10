@@ -35,7 +35,7 @@ Now that we have the basics out of the way, it's time to start coding!
 
 ## Snail Subsystem
 
-Before we make our file that represents the subsystem in code, there is one file in our template which is essential: `SnailSubsystem.java`. This file is an abstract class that each subsystem class must extend to be recognized as a subsystem in our code. For a refresh on what abstract classes are and their uses, go to our [Polymorphism page](https://frc1257.github.io/robotics-training/#/java/4-Objects/6-Polymorphism).
+Before we make our file that represents the subsystem in code, there is one file in our template which is essential: `SnailSubsystem.java`. This file is an abstract class that each subsystem class must extend to be recognized as a subsystem in our code. For a refresh on what abstract classes are and their uses, go to our [Polymorphism page](https://2729stormrobotics.github.io/RedWatchDocumentation/#/java/4-Objects/6-Polymorphism).
 
 Here is a copy of the `SnailSubsystem` code:
 
@@ -111,7 +111,7 @@ The first part of the code is basic setup that imports a bunch of necessary line
 
 ### enum State
 
-The first chunk of code is when an enum called `State` is declared. If you need a refresher on enums, go to our page on [enums.](https://frc1257.github.io/robotics-training/#/java/2-Control_Flow/7-Enums) The enum is essentially a custom data structure holding any of the **possible** states that our subsystem could be in.
+The first chunk of code is when an enum called `State` is declared. If you need a refresher on enums, go to our page on [enums.](https://2729stormrobotics.github.io/RedWatchDocumentation/#/java/2-Control_Flow/7-Enums) The enum is essentially a custom data structure holding any of the **possible** states that our subsystem could be in.
 
 ### RollerIntake()
 

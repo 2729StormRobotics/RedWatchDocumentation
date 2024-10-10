@@ -1,12 +1,12 @@
 # Claw Intake
 
-Now that you know the basics behind making a subystem and its supporting files, we are going to cover making other common subsystems to practice. The next few lessons will be about learning each of the major subsystems that 1257 uses and how to program them.
+Now that you know the basics behind making a subystem and its supporting files, we are going to cover making other common subsystems to practice. The next few lessons will be about learning each of the major subsystems that 2720 uses and how to program them.
 
 ## Overview
 
 ![openClaw](img/openClaw.jpeg) ![closedClaw](img/closedClaw.jpeg)
 
-The first subsystem we'll be covering is a claw intake, which uses force to clamp onto game pieces and hold them. Above is what a typical claw looks like that uses pneumatics to control the actuation of the claw. In this specific instance, when the cylinder extends, the claw closes, and when it retracts, the claw opens. In the past, we've used claws in robots such as Team 1257's second 2018 robot (the original robot did not have a claw, but it was rebuilt for the offseason Brunswick Eruption event).
+The first subsystem we'll be covering is a claw intake, which uses force to clamp onto game pieces and hold them. Above is what a typical claw looks like that uses pneumatics to control the actuation of the claw. In this specific instance, when the cylinder extends, the claw closes, and when it retracts, the claw opens. In the past, teams have used claws such as Team 1257's second 2018 robot.
 
 ### Why Pneumatics?
 
@@ -298,4 +298,3 @@ public final class Constants {
 
 If there are any lingering questions about anything gone over in this lesson, please contact a senior programming member. Click [here](https://github.com/FRC1257/training-programs/tree/master/basics/claw-intake) for a link to the full code.
 
-With the claw lesson over, you now know how to code two major subsystems that team 1257 uses! Next lesson, we will learn about yet another subsystem that team 1257 uses nearly every year: the arm!

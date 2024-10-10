@@ -24,7 +24,7 @@ filter.calculate(input);
 
 ## Example
 
-In 2020, we used the slew rate limiter to make our closed-loop driving more smooth and with much less jerking. Check out [this page](https://github.com/FRC1257/2020-Robot/blob/master/src/main/java/frc/robot/commands/drivetrain/ClosedLoopDriveCommand.java) for the full code.
+Last year used the slew rate limiter to make our closed-loop driving more smooth and with much less jerking.
 
 ## Sources
 

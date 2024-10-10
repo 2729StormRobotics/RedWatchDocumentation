@@ -2,7 +2,7 @@
 
 (Note: this post is mainly based off a paper from [this](https://www.chiefdelphi.com/t/joystick-scaling-deadband/355153) forum post.)
 
-Once again, 1257 generally uses Xbox controllers to interact with a robot. One is pictured below.
+Once again, we generally use Xbox controllers to interact with a robot. One is pictured below.
 
 ![Amazon Basics Controller](img/AmazonBasicsController.jpg ':size=350x300')
 
@@ -92,3 +92,10 @@ A mathematical explanation from the [source](https://www.chiefdelphi.com/t/joyst
 > Essentially, it is based off of the point-slope form Y = M(X - X0) + Y0. However, Y0 is not used because we want the value to start at 0. X0 is the deadband adjusted to be positive or negative depending on whether the joystick is in the positive or negative direction. The slope was based off of the slope formula, where slope = ( Y2 - Y1 ) / ( X2 – X1 ). Y2 is equal to 1 for achieving 100% on the output of the function and X2 is 1 for an input of 100%. Y1 is 0 because X1 is equal to the deadband, because at the deadband we want the function output to be 0% and at 100% we want the function output to be 100%.
 
 Scaled deadbanding should generally be used over basic deadbanding for the reasons described above: better precision and overall improved control.
+
+# Other Joysticks
+## Logitech Extreme 3D Pro
+
+Coming soon
+
+Its pretty similar to the ones above though.

@@ -2,12 +2,6 @@
 
 Following trajectories requires a lot of code, but luckily, most of the code has already been written! It still needs to be tested though, so if anyone does test it, please either edit this article to reflect the changes from testing or leave an issue in GitHub describing what needs to be changed!
 
-## Programming
-
-For now, all of the code for a drivetrain that implements the following features is available here: [https://github.com/Ryan10145/frc-drivetrain](https://github.com/Ryan10145/frc-drivetrain)
-
-This was written by a former FRC 1257 programming captain but was never tested before he graduated. If it's ever fully tested, it can be moved to the official 1257 GitHub account. To use the code in this project, it is best to download the project and then just copy and paste the subsystem file as well as all of the commands into the current robot project. Make sure you also copy and paste all of the required constants from `Constants.java` as well.
-
 ### Features
 
 - Basic manual drive that just sends joystick inputs directly to the drivetrain

@@ -40,7 +40,7 @@ There are no commands or `RobotContainer` with iterative. Instead, we execute al
 
 ## Programming
 
-We won't dive too deep into an iterative example program, but you can see an example of one from our 2019 robot. We'll really only be focusing on command-based and shouldn't be moving back to iterative. It's just good to know that iterative *does* exist. If you want to explore more, see 1257's [2019 code](https://github.com/FRC1257/2019-Robot).
+We won't dive too deep into an iterative example program, but you can see an example of one from our 2019 robot. We'll really only be focusing on command-based and shouldn't be moving back to iterative. It's just good to know that iterative *does* exist.
 
 One note to take is that using iterative programming for a robot makes working in autonomous immensely more difficult. All the features and convenience that comes with command-based is thrown away, and you're essentially back to square one with autonomous routines.
 
@@ -48,7 +48,7 @@ One note to take is that using iterative programming for a robot makes working i
 
 While command-based is definitely our go-to structure for main robot programming, times come where the team may need to quickly test hardware. The fastest way to prepare would be to write test code on the spot in iterative.
 
-For instance, we might need to quickly test a two-motor module. We would go through the same process of declaring and using motors and an Xbox controller outlined back in the [Basics](https://frc1257.github.io/robotics-training/#/frc/1-Basics/README) section. However, we can declare our necessities directly in `Robot.java`, and then act accordingly in `teleopPeriodic()`, as shown here:
+For instance, we might need to quickly test a two-motor module. We would go through the same process of declaring and using motors and an Xbox controller outlined back in the [Basics](https://2729stormrobotics.github.io/RedWatchDocumentation/#/frc/1-Basics/README) section. However, we can declare our necessities directly in `Robot.java`, and then act accordingly in `teleopPeriodic()`, as shown here:
 
 ```java
 package frc.robot;

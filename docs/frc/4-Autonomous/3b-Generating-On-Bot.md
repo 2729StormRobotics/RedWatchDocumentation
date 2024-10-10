@@ -36,7 +36,7 @@ shoot = SmartDashboard.getBoolean("Shoot", false);
 ## Generating Trajectories
 We used [PathWeaver](https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/pathweaver/index.html) to estimate the coordinates for certain positions on the field. We stored these positions as constants in the `Constants.java` file in a separate class called `Autonomous`. 
 
-In order to create autos, we created a class called [`GenerateTrajectories`](https://github.com/FRC1257/2023-Robot/blob/master/src/main/java/frc/robot/commands/GenerateTrajedies.java) that would use the information sent on the shuffleboard to generate trajectories for the robot to follow as well as coordinate movements for the robot to do to score.
+In order to create autos, we created a class called (coming soon) that would use the information sent on the shuffleboard to generate trajectories for the robot to follow as well as coordinate movements for the robot to do to score.
 
 We then used [WPILib Trajectory Generation](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/trajectories/trajectory-generation.html#trajectory-generation) to generate trajectories from those coordinates. We made a `ToPosCommand` to handle creating and following a trajectory with a given set of waypoints.
 

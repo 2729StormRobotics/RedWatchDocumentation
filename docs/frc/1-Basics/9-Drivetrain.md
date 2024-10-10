@@ -10,7 +10,7 @@ A drivetrain is defined as "the group of components that deliver power to the dr
 
 [Source](https://www.simbotics.org/wp-content/uploads/2019/12/simbotseminarseries-drivetraindesign.pdf)
 
-On 1257, we almost always use a normal kitbot 6 wheel tank drive, similar to the one pictured above. On this type of drivetrain, the wheels are fixed and therefore cannot be rotated clockwise nor counterclockwise (unlike a car, where the front wheels can rotate to turn). While this may seem restrictive to movement, it is much easier to both build and program.
+On 2720, we can use a normal kitbot 6 wheel tank drive, similar to the one pictured above. On this type of drivetrain, the wheels are fixed and therefore cannot be rotated clockwise nor counterclockwise (unlike a car, where the front wheels can rotate to turn). While this may seem restrictive to movement, it is much easier to both build and program.
 
 ## Subsystem File
 
@@ -57,7 +57,7 @@ public class Drivetrain extends SnailSubsystem {
 
 Just like we did for all the previous subsystems, we now need to determine our drivetrain's states. For now, we will only focus on the `MANUAL` state, and will leave more advanced drivetrain states for future sections.
 
-We'll declare our state(s) in the form of an [enum:](https://frc1257.github.io/robotics-training/#/java/2-Control_Flow/7-Enums). We also have a variable to hold the state of the subsystem.
+We'll declare our state(s) in the form of an [enum:](https://2729stormrobotics.github.io/RedWatchDocumentation/#/java/2-Control_Flow/7-Enums). We also have a variable to hold the state of the subsystem.
 
 ```java
     public enum State {
@@ -291,7 +291,7 @@ The next step is to set up our subsystem and add a default command:
 
 We use `setDefaultCommand()` to pass in the `ManualDriveCommand` we wrote above. Note how in the manual command, after we pass in the `Drivetrain` object, we use `driveController::getDriveForward` and `driveController::getDriveTurn` to be passed in for the `DoubleSupplier`s. Using Java's `::` operator allows to pass in the function itself and not a result of evaluating that function. 
 
-`getDriveForward()` and `getDriveTurn()` are functions that are already defined in the Xbox controller object for your use. In the next section, we're going to quickly go over exactly how these functions work since we use a bit of a special drive scheme at 1257 that requires a bit of explanation.
+`getDriveForward()` and `getDriveTurn()` are functions that are already defined in the Xbox controller object for your use. In the next section, we're going to quickly go over exactly how these functions work since we use a bit of a special drive scheme at 2720 that requires a bit of explanation.
 
 Once again, when `execute()` is run in `ManualDriveCommand`, the command will receive *constantly-updated* controller input values for the drivetrain instead of the result of evaluating the controller's functions once.
 
@@ -301,7 +301,7 @@ Also, `configureButtonBindings()` is left empty here since we only have one sour
 
 When passing our forward and turning values to `ManualDriveCommand`, we made use of the functions `getDriveForward()` and `getDriveTurn()`. However, these aren't just functions that return joystick values. In fact, if you take a look into the code inside of `SnailController.java` you will see that it actually is a bit more involved than that.
 
-Instead, those functions are used for safety and to facilitate 1257's multiple drive schemes. The first idea is that we only want to enable driving if a certain is pressed on our controller. This is because if something goes wrong such as the controller being wonky or someone dropping the controller, the drivetrain has a **very small risk** of having both the safety key and the joystick being moved at the same time.
+Instead, those functions are used for safety and to facilitate 2720's multiple drive schemes. The first idea is that we only want to enable driving if a certain is pressed on our controller. This is because if something goes wrong such as the controller being wonky or someone dropping the controller, the drivetrain has a **very small risk** of having both the safety key and the joystick being moved at the same time.
 
 Another purpose of these functions is to facilitate different drivers who have very different preferences for how they would like to drive, and for ease of facilitating as many people as possible, we have chosen to program three different drive schemes that correspond to three different safety keys. They are described below:
 
@@ -309,8 +309,18 @@ Another purpose of these functions is to facilitate different drivers who have v
 * Left bumper is held: Forward = Left Stick Y Axis, Turn = Right Stick X Axis
 * Right bumper is held: Forward = Right Stick Y Axis, Turn = Left Stick X Axis
 
-## Conclusion
 
-With that, we're finished! Click [here](https://github.com/FRC1257/training-programs/tree/master/basics/drivetrain) for a link to the full code.
+# SWERVE
+## Overview
+The drivetrain is one of the most critical subsystems of the robot, as without it, movement is impossible. While a variety of drivetrain designs exist, our team has focused on developing a swerve drive this year, making it essential for us to understand how to program and control it.
+
+A drivetrain is defined as “the group of components that deliver power to the driving wheels.” In the case of a swerve drive, this system involves not only delivering power to the wheels but also independently controlling the rotation and direction of each wheel module. Unlike a traditional tank drive, where the wheels are fixed, a swerve drive allows for omnidirectional movement by rotating each wheel on its axis, enabling the robot to move in any direction without changing its orientation.
+
+
+On Team 2720, we utilize a swerve drive system where each wheel can rotate independently. This allows for much greater maneuverability compared to traditional drives, as the robot can move sideways, diagonally, or pivot in place. While the complexity of both building and programming a swerve drive is higher than a typical tank drive, the flexibility and precision it offers in competition make it worth the challenge.
+
+### Example code for Swerve is coming soon
+
+## Conclusion
 
 In the next section, you will learn how to add a bit more functionality to the basic subsystems we have programmed so far with things like toggling precision / reversed mode.

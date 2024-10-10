@@ -1,6 +1,6 @@
 # Encoders
 
-Encoders are quite possibly the most important and prevalent of FRC sensors (at least on 1257). There are two main types of encoders that we will discuss in this section: the CTRE SRX MAG Encoder and the built-in NEO Brushless motor encoder (used in conjunction with the SPARK MAX).
+Encoders are quite possibly the most important and prevalent of FRC sensors (at least on 2720). There are two main types of encoders that we will discuss in this section: the CTRE SRX MAG Encoder and the built-in NEO Brushless motor encoder (used in conjunction with the SPARK MAX).
 
 ## CTRE SRX MAG Encoder
 
@@ -51,7 +51,7 @@ public void displayShuffleboard() {
 
 When we use these encoders, we have to scale the values we obtain. By default, the encoder returns measurements in ticks (ticks / second for velocity), where a tick is 1/4096th of a revolution. Therefore, to obtain revolutions of the motor, we have to divide by 4096.0 (the .0 is important to ensure that we convert to a double and retain the decimal place!).
 
-Next, depending on the mechanism, we can scale to a real world value. One extremely common measure is for our drivetrain. We want to convert between revolutions and the distance traveled by the wheel. To do so, we first need the gearbox reduction and the diameter of the wheels. For 1257, we frequently use a reduction of 10.71:1 and a wheel diameter of 6" in our drivetrain. For our elevator example, we will use a gearbox reduction of 48:1 and a pulley diameter of 6".
+Next, depending on the mechanism, we can scale to a real world value. One extremely common measure is for our drivetrain. We want to convert between revolutions and the distance traveled by the wheel. To do so, we first need the gearbox reduction and the diameter of the wheels. For our elevator example, we will use a gearbox reduction of 48:1 and a pulley diameter of 6".
 
 ```java
 private double getHeight() {
