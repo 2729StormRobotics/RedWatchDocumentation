@@ -2,15 +2,8 @@
 
 This article will just be a quick list of all of the steps necessary to program a subsystem. It won't go into any exact details, so consult the previous subsystem tutorials for that.
 
-## Create Project from snail-robot-template (if making a new project)
+## Create Project from a robot template (Coming soon)
 
-1. Go to [coming soon] and press the green `Use this template` button to create a new project if you are making a new project. If working on an already existing project, skip this step.
-2. If working on the GitHub website, skip the rest of this section. If using Visual Studio Code, follow the rest of the instructions.
-3. Open GitHub Desktop and log in if necessary. Go to File > Clone Repository and then select the repository that you just created in Step 1.
-4. Select a local area on your computer where you will download this project to. It is highly recommended that you make a folder on your computer in your Desktop or Documents folder for containing all robotics projects.
-5. Press the Clone button and wait for the project to download.
-6. Open VS Code. If you chose to install it separately from an existing Visual Studio Code installation, make sure the version of Visual Studio Code you're opening says "WPILib VS Code" instead of just "VS Code".
-7. In VS Code, open the folder for your robot project by going to File > Open Folder. Then, select the folder containing your robot project. This should be the one that has the exact same name as the GitHub repository and should not be a parent folder of that.
 
 ## Create Subsystem File
 

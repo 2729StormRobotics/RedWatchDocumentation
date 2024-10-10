@@ -4,7 +4,7 @@ Ultimately, to organize our robot code, we use what is known as a **command-base
 
 ## Subsystems
 
-All subsystems on a robot are composed of actuators (motors/pistons) and sensors. However, we won't worry about sensors right now. For each of these subsystems, we will make a class inside of our `/subsystems` folder that represents it. For instance, we will make a file called `Intake.java`, and this class should extend `SnailSubsystem`. In this class, we will include all of the code to run the subsystem.
+All subsystems on a robot are composed of actuators (motors/pistons) and sensors. However, we won't worry about sensors right now. For each of these subsystems, we will make a class inside of our `/subsystems` folder that represents it. For instance, we will make a file called `Intake.java`, and this class should extend `Subsystem`. In this class, we will include all of the code to run the subsystem.
 
 Each of these subsystems will have a few actions it can do with these actuators. For instance, a drivetrain can be moved with manual driver control. An intake could either intake or eject a game piece. An elevator can use either manual control or precise closed loop control to get to a specific position.
 

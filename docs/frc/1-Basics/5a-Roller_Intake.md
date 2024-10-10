@@ -157,7 +157,7 @@ The first thing that is usually done when making a subsystem is the declaration 
 ```java
 ...
 
-public class RollerIntake extends SnailSubsystem {
+public class RollerIntake extends Subsystem {
 
     private CANSparkMax rollerIntakeMotor;
 
